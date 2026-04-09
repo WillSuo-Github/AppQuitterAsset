@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Quitter Helper - Download</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 600px;
+            padding: 40px 24px;
+        }
+
+        .app-icon {
+            width: 128px;
+            height: 128px;
+            border-radius: 28px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+            margin-bottom: 32px;
+            transition: transform 0.3s ease;
+        }
+
+        .app-icon:hover {
+            transform: scale(1.05);
+        }
+
+        h1 {
+            font-size: 2.2em;
+            font-weight: 700;
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            font-size: 1.1em;
+            color: rgba(255, 255, 255, 0.65);
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            text-decoration: none;
+            padding: 16px 40px;
+            border-radius: 14px;
+            font-size: 1.15em;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 30px rgba(102, 126, 234, 0.4);
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 40px rgba(102, 126, 234, 0.55);
+        }
+
+        .download-btn:active {
+            transform: translateY(0);
+        }
+
+        .download-btn svg {
+            width: 22px;
+            height: 22px;
+            fill: currentColor;
+        }
+
+        .steps {
+            margin-top: 52px;
+            text-align: left;
+            background: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 18px;
+            padding: 32px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .steps h2 {
+            font-size: 1.15em;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .step {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            margin-bottom: 18px;
+        }
+
+        .step:last-child {
+            margin-bottom: 0;
+        }
+
+        .step-number {
+            flex-shrink: 0;
+            width: 28px;
+            height: 28px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.85em;
+            font-weight: 700;
+        }
+
+        .step-text {
+            font-size: 0.95em;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.7;
+            padding-top: 3px;
+        }
+
+        .footer {
+            margin-top: 48px;
+            font-size: 0.82em;
+            color: rgba(255, 255, 255, 0.3);
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.08);
+            padding: 4px 12px;
+            border-radius: 6px;
+            font-size: 0.8em;
+            color: rgba(255, 255, 255, 0.45);
+            margin-top: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="icon.png" alt="App Quitter" class="app-icon">
+
+        <h1>App Quitter Helper</h1>
+        <p class="subtitle">
+            Install the helper component to enable full app quitting functionality on your Mac.
+        </p>
+
+        <a href="https://github.com/WillSuo-Github/AppQuitterAsset/releases/latest/download/App%20Quitter%20Helper%20Installer.zip" class="download-btn">
+            <svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+            Download Installer
+        </a>
+
+        <div class="badge">macOS 13.0+</div>
+
+        <div class="steps">
+            <h2>Installation Guide</h2>
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-text">Click the <strong>Download Installer</strong> button above to download the installer.</div>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-text">Open the downloaded <strong>.zip</strong> file to extract the installer app.</div>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-text">Double-click <strong>App Quitter Helper Installer</strong> to launch it, then follow the on-screen instructions.</div>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-text">When prompted, enter your administrator password to complete the installation.</div>
+            </div>
+        </div>
+
+        <p class="footer">App Quitter &copy; 2025 Will Suo</p>
+    </div>
+</body>
+</html>
