@@ -2,6 +2,7 @@
   "code": 200,
   "message": "success",
   "data": {
-    "helperInstallEnabled": true
+    "helperInstallEnabled": true,
+    "reviewBuildVersion": ""
   }
 }
